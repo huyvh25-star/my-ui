@@ -25,9 +25,9 @@ export default function Button({
       green: "bg-green-500 text-white hover:bg-green-600",
     },
     outline: {
-      blue: "border border-blue-500 text-blue-500 hover:bg-blue-50",
-      red: "border border-red-500 text-red-500 hover:bg-red-50",
-      green: "border border-green-500 text-green-500 hover:bg-green-50",
+      blue: "border border-blue-500 text-blue-500 hover:bg-blue-200",
+      red: "border border-red-500 text-red-500 hover:bg-red-200",
+      green: "border border-green-500 text-green-500 hover:bg-green-200",
     },
   };
 
@@ -38,6 +38,7 @@ export default function Button({
     disabled && "opacity-50 cursor-not-allowed",
     className
   );
+  console.log(buttonClass);
 
   return (
     <button className={buttonClass} disabled={disabled} {...props}>

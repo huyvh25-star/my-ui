@@ -46,3 +46,12 @@ export const Disabled = {
     disabled: true,
   },
 };
+
+export const OutBlue = {
+  args:{
+    children:"Outline Button",
+    variant:"outline",
+    size:"md",
+    color:"blue"
+  }
+};
