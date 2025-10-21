@@ -1,10 +1,8 @@
-import React from "react";
-import Input from "../components/ui/Input/Input";
-
+import Card from "../components/Card/Card";
 const Content = () => {
   return (
-    <div>
-      <Input />
+    <div className="w-full">
+      <Card />
     </div>
   );
 };
