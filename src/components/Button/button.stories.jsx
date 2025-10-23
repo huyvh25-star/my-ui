@@ -3,18 +3,19 @@ import Button from "./Button";
 export default {
   title: "Components/Button",
   component: Button,
+  tags: ["autodocs"],
   argTypes: {
     variant: {
       control: "radio",
       options: ["solid", "outline"],
     },
     size: {
-      control: "radio",
+      control: "select",
       options: ["sm", "md", "lg"],
     },
     color: {
-      control: "radio",
-      options: ["blue", "red", "green"],
+      control: "select",
+      options: ["blue", "red", "green", "yellow", "default"],
     },
     disabled: { control: "boolean" },
     children: { control: "text" },
@@ -22,36 +23,27 @@ export default {
 };
 
 export const Default = {
-  args: {
-    children: "Click me",
-    variant: "solid",
-    size: "md",
-    color: "blue",
-    disabled: false,
+  args:{
+    children:"button",
+    variant:"solid",
+    size:"md",
+    color:"default",
+    disabled:false,
   },
 };
 
 export const Outline = {
-  args: {
-    children: "Outline Button",
-    variant: "outline",
-    size: "md",
-    color: "red",
+  args:{
+    children:"Outline",
+    variant:"outline",
+    size:"md",
+    color:"red",
   },
 };
 
 export const Disabled = {
-  args: {
-    children: "Disabled Button",
-    disabled: true,
-  },
-};
-
-export const OutBlue = {
   args:{
-    children:"Outline Button",
-    variant:"outline",
-    size:"md",
-    color:"blue"
-  }
+    children:"Disabled",
+    disabled:true,
+  },
 };
